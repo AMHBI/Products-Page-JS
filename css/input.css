@@ -3,14 +3,25 @@
 @tailwind utilities;
 
 @layer components {
-    .products {
-        @apply flex flex-wrap justify-evenly items-center 
-    }
+  .products {
+    @apply flex flex-wrap justify-evenly items-center;
+  }
   .product-item {
-    @apply flex flex-col justify-center items-center gap-2 w-full mx-10 md:mx-1 md:w-1/5 h-full md:h-1/2 bg-slate-200 my-5  pb-4 rounded-2xl
-
-}
-.product-item img {
-    @apply object-cover w-full h-64 rounded-t-2xl
-}
+    @apply flex flex-col justify-center items-center gap-2 w-full mx-10 md:mx-1 md:w-1/5 h-full md:h-1/2 bg-slate-200 my-5  pb-4 rounded-2xl shadow-xl shadow-stone-600;
+  }
+  .product-item img {
+    @apply object-cover w-full h-64 rounded-t-2xl;
+  }
+  .product-item p {
+    @apply text-lg font-semibold text-fuchsia-950;
+  }
+  .product-item span {
+    @apply bg-fuchsia-950 text-white py-[0.1rem] px-3 rounded-full hover:bg-fuchsia-600 transition-colors duration-500 cursor-pointer;
+  }
+  .search {
+    @apply flex flex-col md:flex-row justify-evenly gap-4 md:gap-0 items-center my-8;
+  }
+  .filter-button {
+    @apply bg-fuchsia-800 text-white w-[7rem] rounded-lg h-[2.5rem] text-xl;
+  }
 }

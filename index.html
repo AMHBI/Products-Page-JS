@@ -10,84 +10,86 @@
     <link rel="icon" href="./assets/icon/amhb.ico" />
   </head>
   <body class="bg-gradient-to-r from-fuchsia-500 to-sky-700 relative">
-    <div class="bg-black opacity-50 bg-blend-hard-light blur-md fixed -top-5 -left-2 min-h-[110dvh] min-w-[100dvw] -z-50">
-    -
+    <div
+      class="bg-black opacity-50 bg-blend-hard-light blur-md fixed -top-5 -left-2 min-h-[110dvh] min-w-[100dvw] -z-50">
+      -
     </div>
-      <header class="">
-        <h1 class="">Products Page</h1>
-      </header>
-      <main>
-        <div id="search" class="">
+    <header
+      class="bg-stone-300 rounded-2xl mx-auto my-4 w-11/12 text-center h-12">
+      <h1 class="text-2xl font-semibold">Products Page</h1>
+    </header>
+    <main>
+      <div id="search" class="search">
+        <input
+          type="text"
+          placeholder="Search by name..."
+          id="search-name-input"
+          class="bg-transparent ring-2 py-2 px-5 rounded-2xl focus:outline-none text-white text-xl font-semibold ring-fuchsia-600 focus:ring-fuchsia-400" />
+        <div class="">
+          <button class="filter-button">All</button>
+          <button class="filter-button">Tech</button>
+          <button class="filter-button">Clothing</button>
+          <button class="filter-button">Health</button>
+        </div>
+        <div class="flex flex-col md:flex-row">
           <input
-            type="text"
-            placeholder="Search by name..."
-            id="search-name-input" />
-          <div class="">
-            <button class="">All</button>
-            <button class="">Tech</button>
-            <button class="">Clothing</button>
-            <button class="">Health</button>
-          </div>
-          <div>
-            <input
-              type="number"
-              placeholder="Search by Price"
-              id="serach-price-input"
-              min="0"
-              class="" />
-            <button class="filter">Search</button>
-          </div>
+            type="number"
+            placeholder="Search by Price"
+            id="serach-price-input"
+            min="0"
+            class="bg-transparent ring-2 py-2 px-5 rounded-2xl focus:outline-none text-white text-xl font-semibold ring-fuchsia-600 focus:ring-fuchsia-400" />
+          <button class="filter">Search</button>
         </div>
-        <!-- products -->
-        <div class="products">
-          <div class="product-item" data-category="tech">
-            <img src="./assets/images/iphone.png" alt="iphone14" />
-            <p>Apple Iphone 14 pro</p>
-            <span>$ 1499</span>
-          </div>
-          <div class="product-item" data-category="clothing">
-            <img src="./assets/images/shoes.png" alt="shoes" />
-            <p>Running Shoes</p>
-            <span>$ 199</span>
-          </div>
-          <div class="product-item" data-category="tech">
-            <img src="./assets/images/watch.png" alt="apple watch" />
-            <p>Apple Watch</p>
-            <span>$ 399</span>
-          </div>
-          <div class="product-item" data-category="clothing">
-            <img src="./assets/images/jacket.png" alt="jacket" />
-            <p>Boy's Jacket</p>
-            <span>$ 169</span>
-          </div>
-          <div class="product-item" data-category="clothing">
-            <img src="./assets/images/bag.png" alt="bag" />
-            <p>College Bag</p>
-            <span>$ 139</span>
-          </div>
-          <div class="product-item" data-category="health">
-            <img src="./assets/images/shampoo.png" alt="shampoo" />
-            <p>Creatin Hair Care</p>
-            <span>$ 39</span>
-          </div>
-          <div class="product-item" data-category="health">
-            <img src="./assets/images/vitamin.png" alt="vitamin" />
-            <p>Vitamin E</p>
-            <span>$ 39</span>
-          </div>
-          <div class="product-item" data-category="health">
-            <img src="./assets/images/cream.png" alt="cream" />
-            <p>Face Cream</p>
-            <span>$ 39</span>
-          </div>
-          <div class="product-item" data-category="tech">
-            <img src="./assets/images/airpods.png" alt="airpods" />
-            <p>Apple Airpods pro</p>
-            <span>$ 299</span>
-          </div>
+      </div>
+      <!-- products -->
+      <div class="products">
+        <div class="product-item" data-category="tech">
+          <img src="./assets/images/iphone.png" alt="iphone14" />
+          <p>Apple Iphone 14 pro</p>
+          <span>$ 1499</span>
         </div>
-      </main>
-    </div>
+        <div class="product-item" data-category="clothing">
+          <img src="./assets/images/shoes.png" alt="shoes" />
+          <p>Running Shoes</p>
+          <span>$ 199</span>
+        </div>
+        <div class="product-item" data-category="tech">
+          <img src="./assets/images/watch.png" alt="apple watch" />
+          <p>Apple Watch</p>
+          <span>$ 399</span>
+        </div>
+        <div class="product-item" data-category="clothing">
+          <img src="./assets/images/jacket.png" alt="jacket" />
+          <p>Boy's Jacket</p>
+          <span>$ 169</span>
+        </div>
+        <div class="product-item" data-category="clothing">
+          <img src="./assets/images/bag.png" alt="bag" />
+          <p>College Bag</p>
+          <span>$ 139</span>
+        </div>
+        <div class="product-item" data-category="health">
+          <img src="./assets/images/shampoo.png" alt="shampoo" />
+          <p>Creatin Hair Care</p>
+          <span>$ 39</span>
+        </div>
+        <div class="product-item" data-category="health">
+          <img src="./assets/images/vitamin.png" alt="vitamin" />
+          <p>Vitamin E</p>
+          <span>$ 39</span>
+        </div>
+        <div class="product-item" data-category="health">
+          <img src="./assets/images/cream.png" alt="cream" />
+          <p>Face Cream</p>
+          <span>$ 39</span>
+        </div>
+        <div class="product-item" data-category="tech">
+          <img src="./assets/images/airpods.png" alt="airpods" />
+          <p>Apple Airpods pro</p>
+          <span>$ 299</span>
+        </div>
+      </div>
+    </main>
 
     <script src="./js/app.js"></script>
   </body>
