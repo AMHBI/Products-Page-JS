@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .products {
+        @apply flex flex-wrap justify-evenly items-center 
+    }
+  .product-item {
+    @apply flex flex-col justify-center items-center gap-2 w-full mx-10 md:mx-1 md:w-1/5 h-full md:h-1/2 bg-slate-200 my-5  pb-4 rounded-2xl
+
+}
+.product-item img {
+    @apply object-cover w-full h-64 rounded-t-2xl
+}
+}
