@@ -7,7 +7,7 @@
     @apply flex flex-wrap justify-evenly items-center;
   }
   .product-item {
-    @apply flex flex-col justify-center items-center gap-2 w-full mx-10 md:mx-1 md:w-1/5 h-full md:h-1/2 bg-slate-200 my-5  pb-4 rounded-2xl shadow-xl shadow-stone-600;
+    @apply flex flex-col justify-center items-center gap-2 w-full mx-10 md:mx-1 md:w-1/5 h-full md:h-1/2 bg-slate-200 my-5 transition-[display] duration-1000 pb-4 rounded-2xl shadow-xl shadow-stone-600;
   }
   .product-item img {
     @apply object-cover w-full h-64 rounded-t-2xl;
@@ -22,6 +22,12 @@
     @apply flex flex-col md:flex-row justify-evenly gap-4 md:gap-0 items-center my-8;
   }
   .filter-button {
-    @apply bg-fuchsia-800 text-white w-[7rem] rounded-lg h-[2.5rem] text-xl;
+    @apply bg-fuchsia-800 hover:bg-fuchsia-700 transition-colors duration-300 text-white w-[4.5rem] md:w-[7rem] rounded-lg h-[2.5rem] text-base md:text-xl;
+  }
+  .search-button {
+    @apply bg-fuchsia-800 hover:bg-fuchsia-700 transition-colors duration-300 text-white w-[4.5rem] md:w-[7rem] rounded-lg h-[2.5rem] text-base md:text-xl;
+  }
+  .selected {
+    @apply bg-red-900 border-2 border-fuchsia-500 hover:bg-red-900
   }
 }

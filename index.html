@@ -14,9 +14,12 @@
       class="bg-black opacity-50 bg-blend-hard-light blur-md fixed -top-5 -left-2 min-h-[110dvh] min-w-[100dvw] -z-50">
       -
     </div>
-    <header
-      class="bg-stone-300 rounded-2xl mx-auto my-4 w-11/12 text-center h-12">
-      <h1 class="text-2xl font-semibold">Products Page</h1>
+    <header class="">
+      <p
+        class="bg-stone-300 rounded-2xl mx-auto py-4 text-center align-middle my-4 w-11/12 min-h-[3rem] text-lg md:text-2xl font-semibold">
+        Products Page | Search your needs...
+      </p>
+      <p />
     </header>
     <main>
       <div id="search" class="search">
@@ -26,19 +29,20 @@
           id="search-name-input"
           class="bg-transparent ring-2 py-2 px-5 rounded-2xl focus:outline-none text-white text-xl font-semibold ring-fuchsia-600 focus:ring-fuchsia-400" />
         <div class="">
-          <button class="filter-button">All</button>
-          <button class="filter-button">Tech</button>
-          <button class="filter-button">Clothing</button>
-          <button class="filter-button">Health</button>
+          <button class="filter-button selected" data-filter="all">All</button>
+          <button class="filter-button" data-filter="tech">Tech</button>
+          <button class="filter-button" data-filter="clothing">Clothing</button>
+          <button class="filter-button" data-filter="health">Health</button>
         </div>
-        <div class="flex flex-col md:flex-row">
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-1">
           <input
             type="number"
             placeholder="Search by Price"
             id="serach-price-input"
             min="0"
             class="bg-transparent ring-2 py-2 px-5 rounded-2xl focus:outline-none text-white text-xl font-semibold ring-fuchsia-600 focus:ring-fuchsia-400" />
-          <button class="filter">Search</button>
+          <button class="search-button">Search</button>
         </div>
       </div>
       <!-- products -->
